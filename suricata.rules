@@ -1,0 +1,1 @@
+alert http any any -> any any (msg:"HTTP Request Example"; flow:established,to_server; http.method; content:"GET"; classtype:bad-unknown; sid:2; rev:1;)
